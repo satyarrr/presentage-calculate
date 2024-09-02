@@ -27,7 +27,9 @@ const MainPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-6">Calculate 19.2% Discount</h1>
+      <h1 className="text-2xl font-bold mb-6 text-black">
+        Calculate 19.2% Discount
+      </h1>
       <input
         type="text"
         placeholder="Enter Gross Value"
@@ -42,8 +44,8 @@ const MainPage = () => {
         Calculate
       </button>
       {netValue !== null && (
-        <div className="mt-6 text-xl font-semibold">
-          <strong>Net Value: </strong> {netValue}
+        <div className="mt-6 text-xl font-semibold text-black">
+          <strong className=" text-black">Net Value: </strong> {netValue}
         </div>
       )}
     </div>
